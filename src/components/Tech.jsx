@@ -165,6 +165,11 @@ const Tech = () => {
                 <Circle ref={techRefs.current[20]} href={technologies[20].docs}>
                   <img src={technologies[20].icon} alt={technologies[20].name} className="w-full h-full object-contain" title={technologies[20].name} />
                 </Circle>
+
+                {/* Docker */}
+                <Circle ref={techRefs.current[21]} href={technologies[21].docs}>
+                  <img src={technologies[21].icon} alt={technologies[21].name} className="w-full h-full object-contain" title={technologies[21].name} />
+                </Circle>
               </div>
             </div>
 
@@ -223,6 +228,16 @@ const Tech = () => {
               toRef={toolsCenterRef}
               duration={4}
               delay={0}
+              pathColor="#915eff"
+              pathWidth={2}
+              pathOpacity={0.3}
+            />
+            <AnimatedBeam
+              containerRef={containerRef}
+              fromRef={techRefs.current[21]}
+              toRef={toolsCenterRef}
+              duration={4.5}
+              delay={0.2}
               pathColor="#915eff"
               pathWidth={2}
               pathOpacity={0.3}

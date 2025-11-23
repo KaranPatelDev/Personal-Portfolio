@@ -1,18 +1,18 @@
 import {
-    backend,
-    css,
-    freelance,
-    git,
-    html,
-    javascript,
-    mobile,
-    mongodb,
-    nodejs,
-    reactjs,
-    sheryians,
-    tailwind,
-    typescript,
-    web
+  backend,
+  css,
+  freelance,
+  git,
+  html,
+  javascript,
+  mobile,
+  mongodb,
+  nodejs,
+  reactjs,
+  sheryians,
+  tailwind,
+  typescript,
+  web
 } from "../assets";
 
 export const navLinks = [
@@ -161,6 +161,11 @@ const technologies = [
     name: "Postman",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
     docs: "https://learning.postman.com/docs/",
+  },
+  {
+    name: "Docker",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    docs: "https://docs.docker.com/",
   },
 ];
 
