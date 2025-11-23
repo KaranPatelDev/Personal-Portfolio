@@ -20,7 +20,7 @@ const Circle = forwardRef(({ className, children, href, onClick }, ref) => {
       ref={ref}
       onClick={handleClick}
       className={cn(
-        "z-10 flex size-16 items-center justify-center rounded-full border-2 border-purple-500/40 bg-gradient-to-br from-purple-900/20 to-black p-3.5 shadow-[0_0_20px_-12px_rgba(145,94,255,0.8)] backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:border-purple-400 hover:shadow-[0_0_30px_-8px_rgba(145,94,255,1)]",
+        "z-10 flex size-14 sm:size-16 items-center justify-center rounded-full border-2 border-purple-500/40 bg-gradient-to-br from-purple-900/20 to-black p-3 sm:p-3.5 shadow-[0_0_20px_-12px_rgba(145,94,255,0.8)] backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:border-purple-400 hover:shadow-[0_0_30px_-8px_rgba(145,94,255,1)]",
         href && "cursor-pointer",
         className
       )}
@@ -59,18 +59,18 @@ const Tech = () => {
       </motion.div>
 
       <div
-        className="relative flex min-h-[750px] w-full items-center justify-center overflow-hidden rounded-lg bg-gradient-to-b from-black to-purple-950/20 border border-purple-500/20 p-12"
+        className="relative flex min-h-[680px] w-full items-center justify-center overflow-hidden rounded-lg bg-gradient-to-b from-black to-purple-950/20 border border-purple-500/20 px-4 py-10 sm:px-8 sm:py-12 lg:p-12"
         ref={containerRef}
       >
-        <div className="flex size-full max-w-7xl flex-col items-stretch justify-between gap-20">
+        <div className="flex size-full max-w-7xl flex-col items-stretch justify-between gap-14 lg:gap-20">
           
           {/* Python Ecosystem */}
           <div className="flex flex-col items-center gap-10">
             <div className="text-purple-300 text-sm font-semibold tracking-wider">PYTHON ECOSYSTEM</div>
-            <div className="flex flex-row items-center justify-center gap-16">
+            <div className="flex flex-wrap justify-center gap-6 md:gap-10 lg:flex-nowrap lg:items-center lg:justify-center lg:gap-16">
               
               {/* Left side - FastAPI, OpenCV, NumPy */}
-              <div className="flex flex-col gap-10">
+              <div className="flex flex-col items-center gap-6 md:gap-10">
                 {[10, 11, 12].map((idx) => (
                   <Circle key={technologies[idx].name} ref={techRefs.current[idx]} href={technologies[idx].docs}>
                     <img src={technologies[idx].icon} alt={technologies[idx].name} className="w-full h-full object-contain" title={technologies[idx].name} />
@@ -79,7 +79,7 @@ const Tech = () => {
               </div>
 
               {/* Left center - Pandas, Matplotlib, Seaborn */}
-              <div className="flex flex-col gap-10">
+              <div className="flex flex-col items-center gap-6 md:gap-10">
                 {[13, 14, 15].map((idx) => (
                   <Circle key={technologies[idx].name} ref={techRefs.current[idx]} href={technologies[idx].docs}>
                     <img src={technologies[idx].icon} alt={technologies[idx].name} className="w-full h-full object-contain" title={technologies[idx].name} />
@@ -88,12 +88,12 @@ const Tech = () => {
               </div>
 
               {/* Python Center - Larger */}
-              <Circle ref={pythonCenterRef} className="size-20 border-purple-500" href={technologies[0].docs}>
+              <Circle ref={pythonCenterRef} className="size-16 sm:size-20 border-purple-500" href={technologies[0].docs}>
                 <img src={technologies[0].icon} alt={technologies[0].name} className="w-full h-full object-contain" title={technologies[0].name} />
               </Circle>
 
               {/* Right center - MediaPipe, PyAutoGUI, Flet */}
-              <div className="flex flex-col gap-10">
+              <div className="flex flex-col items-center gap-6 md:gap-10">
                 {[16, 17, 18].map((idx) => (
                   <Circle key={technologies[idx].name} ref={techRefs.current[idx]} href={technologies[idx].docs}>
                     <img src={technologies[idx].icon} alt={technologies[idx].name} className="w-full h-full object-contain" title={technologies[idx].name} />
@@ -104,15 +104,15 @@ const Tech = () => {
           </div>
 
           {/* Bottom Row: Web, Databases, Tools */}
-          <div className="flex flex-row items-start justify-between gap-16 px-8">
+          <div className="flex flex-col gap-16 px-4 sm:px-6 md:px-8 md:flex-row md:items-start md:justify-between">
             
             {/* Web Technologies */}
             <div className="flex flex-col items-center gap-10 flex-1">
               <div className="text-purple-300 text-sm font-semibold tracking-wider">WEB TECHNOLOGIES</div>
-              <div className="flex flex-col items-center gap-10">
+              <div className="flex flex-col items-center gap-8 sm:gap-10">
                 
                 {/* Top row - HTML, CSS, Tailwind */}
-                <div className="flex gap-10">
+                <div className="flex gap-6 sm:gap-10">
                   {[2, 3, 4].map((idx) => (
                     <Circle key={technologies[idx].name} ref={techRefs.current[idx]} href={technologies[idx].docs}>
                       <img src={technologies[idx].icon} alt={technologies[idx].name} className="w-full h-full object-contain" title={technologies[idx].name} />
@@ -126,7 +126,7 @@ const Tech = () => {
                 </Circle>
 
                 {/* Bottom row - JS, TS, Node */}
-                <div className="flex gap-10">
+                <div className="flex gap-6 sm:gap-10">
                   {[5, 6, 7].map((idx) => (
                     <Circle key={technologies[idx].name} ref={techRefs.current[idx]} href={technologies[idx].docs}>
                       <img src={technologies[idx].icon} alt={technologies[idx].name} className="w-full h-full object-contain" title={technologies[idx].name} />
@@ -139,7 +139,7 @@ const Tech = () => {
             {/* Databases */}
             <div className="flex flex-col items-center gap-10 flex-1">
               <div className="text-purple-300 text-sm font-semibold tracking-wider">DATABASES</div>
-              <div className="flex flex-col items-center gap-10">
+              <div className="flex flex-col items-center gap-8 sm:gap-10">
                 {/* MongoDB (same size) */}
                 <Circle ref={databaseCenterRef} className="border-purple-500" href={technologies[8].docs}>
                   <img src={technologies[8].icon} alt={technologies[8].name} className="w-full h-full object-contain" title={technologies[8].name} />
@@ -155,7 +155,7 @@ const Tech = () => {
             {/* Tools */}
             <div className="flex flex-col items-center gap-10 flex-1">
               <div className="text-purple-300 text-sm font-semibold tracking-wider">TOOLS</div>
-              <div className="flex flex-col items-center gap-10">
+              <div className="flex flex-col items-center gap-8 sm:gap-10">
                 {/* Git (same size) */}
                 <Circle ref={toolsCenterRef} className="border-purple-500" href={technologies[19].docs}>
                   <img src={technologies[19].icon} alt={technologies[19].name} className="w-full h-full object-contain" title={technologies[19].name} />
@@ -228,6 +228,16 @@ const Tech = () => {
               toRef={toolsCenterRef}
               duration={4}
               delay={0}
+              pathColor="#915eff"
+              pathWidth={2}
+              pathOpacity={0.3}
+            />
+            <AnimatedBeam
+              containerRef={containerRef}
+              fromRef={techRefs.current[21]}
+              toRef={toolsCenterRef}
+              duration={4.3}
+              delay={0.15}
               pathColor="#915eff"
               pathWidth={2}
               pathOpacity={0.3}
