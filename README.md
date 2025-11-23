@@ -48,8 +48,3 @@ The app targets Node 18+. Adjust commands if you prefer pnpm or yarn.
 - **LinkedIn:** https://linkedin.com/in/karan-patel-16700a215/
 - **GitHub:** https://github.com/KaranPatelDev
 
-## 🎓 Education
-
-**Parul University**  
-Bachelor of Computer Applications (BCA)  
-2021 – 2024 | CGPA: 9.24
