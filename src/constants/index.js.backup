@@ -1,0 +1,289 @@
+import {
+    backend,
+    css,
+    falverra,
+    freelance,
+    git,
+    html,
+    javascript,
+    macbookpro,
+    mobile,
+    mongodb,
+    nodejs,
+    reactjs,
+    sheryians,
+    tailwind,
+    tripguide,
+    typescript,
+    web
+} from "../assets";
+
+export const navLinks = [
+  {
+    id: "about",
+    title: "About",
+  },
+  {
+    id: "work",
+    title: "experience",
+  },
+
+  {
+    id: "skills",
+    title: "skills",
+  },
+
+  {
+    id: "contact",
+    title: "Contact",
+  },
+];
+
+const services = [
+  {
+    title: "Scalable Backend Systems",
+    icon: web,
+  },
+  {
+    title: "Analytics & BI Solutions",
+    icon: mobile,
+  },
+  {
+    title: "Machine Learning Solutions",
+    icon: backend,
+  },
+];
+
+const technologies = [
+  {
+    name: "Python",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    docs: "https://docs.python.org/3/",
+  },
+  {
+    name: "React",
+    icon: reactjs,
+    docs: "https://react.dev/",
+  },
+  {
+    name: "HTML",
+    icon: html,
+    docs: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  },
+  {
+    name: "CSS",
+    icon: css,
+    docs: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+  },
+  {
+    name: "Tailwind",
+    icon: tailwind,
+    docs: "https://tailwindcss.com/docs",
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+    docs: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
+    docs: "https://www.typescriptlang.org/docs/",
+  },
+  {
+    name: "Node.js",
+    icon: nodejs,
+    docs: "https://nodejs.org/docs/latest/api/",
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+    docs: "https://www.mongodb.com/docs/",
+  },
+  {
+    name: "SQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    docs: "https://dev.mysql.com/doc/",
+  },
+  {
+    name: "FastAPI",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+    docs: "https://fastapi.tiangolo.com/",
+  },
+  {
+    name: "OpenCV",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg",
+    docs: "https://docs.opencv.org/",
+  },
+  {
+    name: "NumPy",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg",
+    docs: "https://numpy.org/doc/",
+  },
+  {
+    name: "Pandas",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg",
+    docs: "https://pandas.pydata.org/docs/",
+  },
+  {
+    name: "Matplotlib",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg",
+    docs: "https://matplotlib.org/stable/index.html",
+  },
+  {
+    name: "Seaborn",
+    icon: "https://seaborn.pydata.org/_images/logo-mark-lightbg.svg",
+    docs: "https://seaborn.pydata.org/",
+  },
+  {
+    name: "MediaPipe",
+    icon: "https://mediapipe.dev/images/mediapipe_small.png",
+    docs: "https://developers.google.com/mediapipe",
+  },
+  {
+    name: "PyAutoGUI",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    docs: "https://pyautogui.readthedocs.io/",
+  },
+  {
+    name: "Flet",
+    icon: "https://flet.dev/img/logo.svg",
+    docs: "https://flet.dev/docs/",
+  },
+  {
+    name: "Git",
+    icon: git,
+    docs: "https://git-scm.com/doc",
+  },
+  {
+    name: "Postman",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+    docs: "https://learning.postman.com/docs/",
+  },
+];
+
+const experiences = [
+  {
+    title: "February 2025 - March 2025",
+    company_name: "Data Analyst Associate Intern | Excelerate",
+    location: "Vadodara, India",
+    icon: freelance,
+    iconBg: "#0188E3",
+    date: "February 2025 - March 2025",
+    points: [
+      "Analyzed user data to extract insights and support business decision-making by conducted trend analysis and data preprocessing to enhance accuracy.",
+      "Built interactive dashboards for real-time data visualization and reporting.",
+    ],
+  },
+  {
+    title: "May 2025 - June 2025",
+    company_name: "Summer Intern | Insansa Technology",
+    location: "Vadodara, India",
+    icon: sheryians,
+    iconBg: "#ffff",
+    date: "May 2025 - June 2025",
+    points: [
+      "Completed a Support Engineer internship at Insansa Techknowledge Pvt. Ltd., assisting in software and system issue resolution.",
+      "Gained practical experience in troubleshooting, technical support, and collaborative problem-solving within a professional environment.",
+    ],
+  },
+];
+
+const testimonials = [
+  {
+    testimonial:
+      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+    name: "Sara Lee",
+    designation: "CFO",
+    company: "Acme Co",
+    image: "https://randomuser.me/api/portraits/women/4.jpg",
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: "Chris Brown",
+    designation: "COO",
+    company: "DEF Corp",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
+  },
+  {
+    testimonial:
+      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Lisa Wang",
+    designation: "CTO",
+    company: "456 Enterprises",
+    image: "https://randomuser.me/api/portraits/women/6.jpg",
+  },
+];
+
+const projects = [
+  {
+    name: "MacBookPro-redesign",
+    description:
+      "A visually engaging website that showcases a redesigned MacBook Pro with smooth animations and a realistic 3D model, offering users an interactive and immersive way to explore the product’s look and features.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "three.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: macbookpro,
+    source_code_link: "https://github.com/gitswastik08/macbook_landingpage",
+    live_website_link: "https://macbookpro3d.netlify.app/",
+  },
+  {
+    name: "Falverra Redesign",
+    description:
+      "A sleek and animated website redesign for Falverra, combining a clean layout with smooth transitions to deliver an engaging, modern browsing experience that highlights the brand’s visual identity and message.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "multi-page",
+        color: "green-text-gradient",
+      },
+    ],
+    image: falverra,
+    source_code_link: "https://github.com/gitswastik08/falverra-redesign",
+    live_website_link: "https://falverra-recode.netlify.app/",
+  },
+  {
+    name: "MailMate - AI Email Assistant",
+    description:
+      "AI-powered email assistant leveraging Google Gemini 1.5 Flash to generate professional, contextual email responses. Supports multiple tones, integrates with Gmail for direct sending, and features a Streamlit interface.",
+    tags: [
+      {
+        name: "ai",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nlp",
+        color: "green-text-gradient",
+      },
+      {
+        name: "gemini",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800",
+    source_code_link: "https://github.com/",
+    live_website_link: "#",
+  },
+];
+
+export { experiences, projects, services, technologies, testimonials };
+
