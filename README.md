@@ -1,33 +1,55 @@
-# Karan Patel - Portfolio Website
+# Karan Patel – Portfolio
 
-## Full Stack Developer Portfolio
+Personal portfolio showcasing my work across backend engineering, AI/ML experiments, and data-driven tooling. The site combines modern UI polish with interactive touches such as an animated hero dock, horizontally scrolling project gallery, and globe-powered contact section.
 
-A modern, responsive portfolio website built with React, Three.js, and Tailwind CSS. This portfolio showcases my skills, projects, and experience as a Full Stack Developer.
+## ✨ Highlights
 
-## 🚀 Technologies Used
+- Animated hero with floating social dock and one-click resume access
+- "Project Showcase" carousel featuring production-scale backends, computer vision utilities, and ML-powered apps
+- Python ecosystem galaxy highlighting the tools I rely on day-to-day
+- Timeline-driven experience section emphasising internships and client work
+- Globe-based contact panel with glassmorphism cards for quick reach-out
 
-- **Frontend:** React.js, Three.js, Framer Motion
-- **Styling:** Tailwind CSS
-- **Build Tool:** Vite
-- **3D Graphics:** Three.js for interactive 3D elements
-- **Email Service:** EmailJS for contact form
+## 🧰 Tech Stack
 
-## 🛠️ Skills & Expertise
+| Category | Technologies |
+| --- | --- |
+| UI & Frameworks | React, Vite, Tailwind CSS, Framer Motion |
+| Interactions | cobe globe, react-parallax-tilt, custom animated components |
+| Tooling | JavaScript (ESNext), npm, ESLint |
 
-- **Frontend:** React.js, JavaScript, HTML5, CSS3, Tailwind CSS
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB
-- **Tools:** Git, GitHub, VS Code, Postman
-- **Other:** RESTful APIs, Responsive Design, MERN Stack
+## 🗂️ Key Sections
 
-## 📫 Contact
+- **Hero:** Typing animation, lamp lighting effect, and quick social/resume actions
+- **About:** Snapshot of the problems I solve and services I offer
+- **Experience:** Internship timeline with highlights and responsibilities
+- **Tech Stack:** Animated Python ecosystem orbit plus broader tooling grid
+- **Projects:** Horizontally scrollable cards linking to live demos and GitHub repos
+- **Contact:** Interactive globe backdrop with email, location (Gujarat, India), and social links
 
-- **Email:** karanpatel@example.com
-- **LinkedIn:** [Karan Patel](https://linkedin.com/in/karanpatel)
-- **GitHub:** [karanpatel](https://github.com/karanpatel)
+## 🚀 Getting Started
+
+```bash
+# install dependencies
+npm install
+
+# start the dev server
+npm run dev
+
+# build for production
+npm run build
+```
+
+The app targets Node 18+. Adjust commands if you prefer pnpm or yarn.
+
+## 📬 Contact
+
+- **Email:** mpkaranpatel001018@gmail.com
+- **LinkedIn:** https://linkedin.com/in/karan-patel-16700a215/
+- **GitHub:** https://github.com/KaranPatelDev
 
 ## 🎓 Education
 
 **Parul University**  
 Bachelor of Computer Applications (BCA)  
-2021 - 2024 | CGPA: 9.24
+2021 – 2024 | CGPA: 9.24
